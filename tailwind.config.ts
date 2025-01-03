@@ -13,8 +13,11 @@ export default {
         '18px': ['18px', '1.1'],
       },
       colors: {
-        customGray: '#282830', 
+        customGray: '#282830',
         lightgray: '#D3D3D3',
+      },
+      lineHeight: {
+        '85': '0.85', // 85% em forma de decimal
       },
     },
   },

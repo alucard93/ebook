@@ -1,9 +1,5 @@
-import MainSection from '../_components/mainSection';
+import MainSection from '../_components/mobile/mainSection'
 
 export default function Version2() {
-  return (
-    <div>
-      <MainSection/>
-    </div>
-  )
+  return <MainSection />
 }
