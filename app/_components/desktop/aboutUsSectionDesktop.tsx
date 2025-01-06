@@ -1,14 +1,14 @@
 import { abhaya } from '@/app/_lib/fonts'
-export default function AboutUsSection() {
+export default function AboutUsSectionDesktop() {
   return (
     <section>
-      <div className="flex flex-col gap-8 pt-8 pb-12 px-8">
+      <div className="flex flex-col gap-6 mt-10 pb-10 ">
         <h2
-          className={`${abhaya.className} text-4xl font-extrabold text-[#282830]`}
+          className={`${abhaya.className} text-5xl font-extrabold text-[#282830]`}
         >
           Quem Somos?
         </h2>
-        <p className="text-lg text-black font-light">
+        <p className="text-lg text-black font-light leading-[21.6px]">
           A Grocers é a plataforma tecnológica integrante do pool de startups da
           microsoft totalmente desenvolvida para supermercados que desejam
           transformar a experiência de compra dos clientes e maximizar
