@@ -12,11 +12,12 @@ import MainSectionDesktop from '../_components/desktop/mainSectionDesktop'
 import MiddleSectionDesktop from '../_components/desktop/middleSectionDesktop'
 import LearnSectionDesktop from '../_components/desktop/learnSectionDesktop'
 
-import EmailForm from '../_components/desktop/EmailForm'
+import EmailForm from '../_components/EmailForm'
 import AboutUsSectionDesktop from '../_components/desktop/aboutUsSectionDesktop'
 import FooterDesktop from '../_components/desktop/footerDesktop'
 
 import ebookIaForm from '../../public/ebook-ia-form.png'
+import MainSectionV1 from '../_components/mobile/MainSectionV1'
 
 export default function Version1() {
   // Inicializa como `false` no servidor
@@ -38,7 +39,7 @@ export default function Version1() {
   if (isMobile) {
     return (
       <div>
-        <MainSection />
+        <MainSectionV1 />
         <MiddleSection />
         <section>
           <AboutUsSection />

@@ -1,17 +1,9 @@
-import { useState } from 'react'
 import Image from 'next/image'
 import imgMain from '@/public/woman.png'
 import ebookImg from '@/public/ebook-img.png'
 import { abhaya } from '@/app/_lib/fonts'
-import Modal from './Modal'
-import EmailForm from '../EmailForm'
 
-export default function MainSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const handleOpenModal = () => setIsModalOpen(true)
-  const handleCloseModal = () => setIsModalOpen(false)
-
+export default function MainSectionV1() {
   return (
     <section>
       <Image
@@ -55,23 +47,13 @@ export default function MainSection() {
           </ul>
         </div>
 
-        <button
-          onClick={handleOpenModal}
+        <a
+          href="/Ebook_Potencial_AI_Supermercados.pdf"
+          download
           className="bg-[#F44] h-[56px] mt-5 text-white text-18px font-bold flex items-center justify-center"
         >
           Baixar e-book
-        </button>
-
-        {isModalOpen && (
-          <Modal onClose={handleCloseModal}>
-            <h3 className="text-18px font-bold text-center max-w-72 mx-auto">
-              Baixe agora nosso ebook gratuito e descubra como a IA pode ser o
-              diferencial competitivo que você <br />
-              precisa!
-            </h3>
-            <EmailForm />
-          </Modal>
-        )}
+        </a>
       </div>
     </section>
   )
