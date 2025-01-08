@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { abhaya, montserrat } from './_lib/fonts.ts'
+import { montserrat } from './_lib/fonts'
 
 export const metadata: Metadata = {
   title: 'Ebook Inteligência Artificial',
@@ -15,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} font-light antialiased`}>{children}</body>
+      <body className={`${montserrat.className} font-light antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }
