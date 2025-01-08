@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 import AboutUsSection from '../_components/mobile/aboutUsSection'
 import Footer from '../_components/mobile/footer'
-import MainSection from '../_components/mobile/mainSection'
+
 import MiddleSection from '../_components/mobile/middleSection'
 import MainSectionDesktop from '../_components/desktop/mainSectionDesktop'
 import MiddleSectionDesktop from '../_components/desktop/middleSectionDesktop'

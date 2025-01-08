@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
       from: 'onboarding@resend.dev',
       to: 'marcus.vinicius@peopleinteractive.com.br',
       subject: `Nova mensagem de ${name}`,
-      react: EmailTemplate({
+      react: await EmailTemplate({
         name,
         phone,
         corporateEmail,
@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json({ message: 'E-mail enviado com sucesso!', data })
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: 'Erro ao enviar o e-mail' },
       { status: 500 }

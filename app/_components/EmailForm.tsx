@@ -142,7 +142,7 @@ const EmailForm = () => {
 
         <button
           type="submit"
-          className="w-full h-14 font-bold bg-[#F44]  text-white p-2 !mt-6 lg:bg-customGray"
+          className="w-full h-14 font-bold bg-[#F44]  text-white p-2 !mt-6 md:bg-customGray"
         >
           Baixar e-book
         </button>
